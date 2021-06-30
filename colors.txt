@@ -1,0 +1,3 @@
+brown -> #625638
+green -> #bece6a, #85a719, #688e0c, #364908
+yellow -> #e6ea44
