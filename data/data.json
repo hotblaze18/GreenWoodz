@@ -1,0 +1,10 @@
+{
+    "vendors": [
+        {
+            "id": 1,
+            "title": "Recycling Solutions Pvt Ltd",
+            "services": ["waste", "ewaste", "home service"],
+            "img": "https://lh5.googleusercontent.com/p/AF1QipOOFoSyrf7oPStTJJPRMv-6R4MPTJOuj4Cs7K6N=s338-k-no" 
+        }
+    ]
+}
