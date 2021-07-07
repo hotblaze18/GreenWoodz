@@ -1,10 +1,10 @@
-# Getting Started with Create React App
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
 ## Available Scripts
 
 In the project directory, you can run:
+
+### `yarn dummy-server`
+
+Runs a dummy json-server to test out the app.
 
 ### `yarn start`
 
