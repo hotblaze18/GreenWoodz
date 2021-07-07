@@ -16,16 +16,19 @@ function Vendors() {
     const [vendors, setVendors] = useState([]); 
 
     useEffect(() => {
-        fetch("http://localhost:3001/vendors")
+        fetch("/vendors")
             .then((res) => res.json())
-            .then((data) => setVendors(data));
+            .then((data) => {
+                setVendors(data.vendors);
+                // console.log(data.vendors);
+            });
     }, [])
 
     return (
         <>
             <Grid container direction="row" spacing={5}>
             {vendors.map(({id, title, img, services}) => (
-                <Grid item xs={12} md={6} lg={4} className={classes.gridItem}>
+                <Grid key={id} item xs={12} md={6} lg={4} className={classes.gridItem}>
                     <VendorCard key={id} title={title} img={img} services={services} />
                 </Grid>
             ))}

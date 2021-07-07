@@ -17,10 +17,11 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "dummy-server": "json-server --watch data/data.json --port=3001",
+    "dummy-server": "cd ../GreenWoodz-api && venv/Scripts/flask run",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
+  "proxy": "http://127.0.0.1:5000/",
   "eslintConfig": {
     "extends": [
       "react-app",
