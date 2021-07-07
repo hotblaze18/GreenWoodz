@@ -1,4 +1,4 @@
-import { Typography, Button, makeStyles } from '@material-ui/core';
+import { Typography, makeStyles } from '@material-ui/core';
 import React from 'react';
 import Card from '@material-ui/core/Card';
 import CardMedia from '@material-ui/core/CardMedia';
@@ -7,10 +7,13 @@ import CardActionArea from '@material-ui/core/CardActionArea';
 
 const useStyles = makeStyles({
     root: {
-      maxWidth: 345,
+      width: '100%',
+    },
+    actionArea: {
+        minHeight: '260px'
     },
     media: {
-      height: 140,
+      height: 140
     },
 });
 
@@ -22,7 +25,7 @@ function VendorCard({ title, services, img }) {
     return (
         <>
             <Card className={classes.root}>
-                <CardActionArea>
+                <CardActionArea className={classes.actionArea}>
                     <CardMedia
                         className={classes.media}
                         image={img}
